@@ -31,7 +31,7 @@ jobs:
     strategy:
       matrix:
         phpVersion: ['8.0', '8.1', '8.2']
-        symfonyVersion: [^6.0]
+        symfonyVersion: [^6.0, ^7.0, ^8.0]
     steps:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        symfonyVersion: [^6.0]
+        symfonyVersion: [^6.0, ^7.0, ^8.0]
         phpVersion: ['8.0', '8.1', '8.2']
     steps:
       - name: Setup PHP
